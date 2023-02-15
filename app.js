@@ -42,8 +42,8 @@ document.querySelector(".card").addEventListener("click", () => {
   let color2 = getRandom();
 
   let degRandom = Math.trunc(Math.random() * 360);
-  document.body.style.background = `linear-gradient(${degRandom}deg, ${color1} 0%, ${color2} 0%)`;
-  document.querySelector('.text').textContent = `linear-gradient(${degRandom}deg, ${color1} 0%, ${color2} 0%)`;
+  document.body.style.background = `linear-gradient(${degRandom}deg, ${color1}, ${color2})`;
+  document.querySelector('.text').textContent = `linear-gradient(${degRandom}deg, ${color1}, ${color2})`;
 });
 function getRandom() {
   let hexCode = "0123456789abcdef";
